@@ -41,7 +41,6 @@
 
 ![DBeaver Sample Database (SQLite)Timokhinvv](https://github.com/user-attachments/assets/56ca60da-0af3-49bc-9570-76d91c05a077)
 
-![DBeaver Sample Database (SQLite)Timokhinvv](https://github.com/user-attachments/assets/ff500a6e-6bb4-47a4-8852-31ef26ff667e)
 
 
 
