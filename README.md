@@ -39,13 +39,7 @@
 - ...
 - идентификатор структурного подразделения, внешний ключ, integer).
 
-![DBeaver Sample Database (SQLite)Timokhinvv](https://github.com/user-attachments/assets/56ca60da-0af3-49bc-9570-76d91c05a077)
-![VirtualBox_vm2_02_03_2025_03_36_44](https://github.com/user-attachments/assets/db463c3e-363d-4fb9-8a83-6eb14a9d222e)
-![VirtualBox_vm2_02_03_2025_03_37_26](https://github.com/user-attachments/assets/4e893acc-6f11-49e1-97d2-01a7565712be)
-![VirtualBox_vm2_02_03_2025_03_37_49](https://github.com/user-attachments/assets/05fa3c0b-5cd4-445f-a045-f9c00820d281)
-![VirtualBox_vm2_02_03_2025_03_39_04](https://github.com/user-attachments/assets/0ae617c4-b19a-4d2b-a7cc-0dc18f2be1b9)
-![VirtualBox_vm2_02_03_2025_03_40_04](https://github.com/user-attachments/assets/1f58665f-4952-49b1-b76a-9671835f9c5b)
-![VirtualBox_vm2_02_03_2025_03_49_56](https://github.com/user-attachments/assets/d805a39e-2e52-4cb1-86c9-8ad166916065)
+
 
 Таблица "Сотрудники" (Employees):
 
