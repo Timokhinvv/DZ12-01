@@ -41,30 +41,40 @@
 
 
 
-Таблица "Сотрудники" (Employees):
-
-ФИО сотрудника (Name): создадим отдельные столбцы для имени и фамилии. Поскольку фамилия и имя могут иметь разную длину, мы создадим столбцы с типом данных varchar(50) для каждого.
-Оклад (Salary): создадим столбец с типом данных numeric(10,2) для хранения зарплаты сотрудника.
-Должность (Job Title): создадим столбец с типом данных varchar(50) для хранения названия должности.
-Тип подразделения (Department Type): создадим столбец с типом данных varchar(50) для хранения типа подразделения.
-Структурное подразделение (Department): создадим столбец с типом данных integer для хранения идентификатора подразделения.
-Дата найма (Hire Date): создадим столбец с типом данных date для хранения даты найма сотрудника.
-Адрес филиала (Branch Address): создадим столбец с типом данных varchar(200) для хранения адреса филиала.
-Проект на который назначен (Project Assignment): создадим столбец с типом данных varchar(100) для хранения названия проекта.
-
-Далее:
-CREATE TABLE Сотрудники (
-идентификатор serial PRIMARY KEY,
-имя varchar(50),
-фамилия varchar(50),
-оклад numeric(10,2),
-должность varchar(50),
-тип подразделения varchar(50),
-структурное подразделение integer references Подразделения (идентификатор подразделения),
-дата найма date,
-адрес филиала varchar(200),
-проект на который назначен varchar(100)
-);
+1.	ФИО Сотрудники (Employees)
+      Идентификатор (employee_id): PRIMARY KEY, serial.
+      Фамилия (lastname): varchar(50).
+      Имя (firstname): varchar(50).
+      Должность (job_title): varchar(50).
+      Тип подразделения (department_type): varchar(50).
+      Идентификатор подразделения (department_id): external key, integer.
+      Дата найма (hire_date): date.
+2.	Структурное подразделение (Departments)
+      Идентификатор подразделения (department_id): PRIMARY KEY, serial.
+      Название подразделения (department_name): varchar(100).
+      Тип подразделения (department_type): varchar(50).
+      Структурное подразделение (structural_department): varchar(100).
+      Адрес филиала (branch_address): varchar(200).
+3.	Проект на который назначен (Projects)
+      Идентификатор проекта (project_id): PRIMARY KEY, serial.
+      Название проекта (project_name): varchar(100).
+      Описание проекта (project_description): text.
+      Статус проекта (project_status): varchar(50).
+4.	Адрес филиала (Branches)
+      Идентификатор филиала (branch_id): PRIMARY KEY, serial.
+      Название филиала (branch_name): varchar(100).
+      Адрес филиала (branch_address): varchar(200).
+5.	Оклад (Salaries)
+      Идентификатор заработной платы (salary_id): PRIMARY KEY, serial.
+      Идентификатор сотрудника (employee_id): external key, integer.
+      Оклад (salary): numeric(10, 2).
+6.	Должность (Jobs)
+      Идентификатор должности (job_id): PRIMARY KEY, serial.
+      Название должности (job_title): varchar(50).
+      Описание должности (job_description): text.
+7.	Тип подразделения (DepartmentTypes)
+      Идентификатор типа подразделения (department_type_id): PRIMARY KEY, serial.
+      Название типа подразделения (department_type_name): varchar(50).
 
 
 
